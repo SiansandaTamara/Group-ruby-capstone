@@ -23,4 +23,3 @@ class Author
     }
   end
 end
-
