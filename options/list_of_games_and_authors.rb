@@ -39,7 +39,8 @@ module List
     parsed_data = JSON.parse(json_data)
     file.close
     @games = parsed_data.map do |game_data|
-      Game.new(game_data['name'], game_data['multiplayer'], game_data['last_played_at'], game_data['published'], game_data['archived'])
+      Game.new(game_data['name'], game_data['multiplayer'], game_data['last_played_at'], game_data['published'],
+               game_data['archived'])
     end
   rescue StandardError
     @games = []
