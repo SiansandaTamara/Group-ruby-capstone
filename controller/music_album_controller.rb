@@ -21,7 +21,8 @@ module MusicAlbumController
       puts 'No music_album present yet'
     else
       @items.each do |music_album|
-        puts ": publish date: #{music_album.publish_date}, on spotify : #{music_album.on_spotify}, archived: #{music_album.archived} "
+        puts ": publish date: #{music_album.publish_date}, 
+        on spotify : #{music_album.on_spotify}, archived: #{music_album.archived} "
       end
     end
   end
