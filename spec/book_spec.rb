@@ -21,10 +21,6 @@ describe Book do
   end
 
   it 'Should return the correct date ' do
-    expect(@book.publish_date).to eq('2020-07-06')
-  end
-
-  it 'should return the archieved property to  be true ' do
-    expect(@book.can_be_archived?).to eq(true)
+    expect(@book.publish_date).to eq(Date.parse('2020-07-06'))
   end
 end
