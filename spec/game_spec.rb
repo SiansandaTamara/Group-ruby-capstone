@@ -1,5 +1,7 @@
 # Test for the class game
 require_relative '../classes/game'
+require_relative '../classes/author'
+require_relative '../options/list_of_games_and_authors'
 
 describe Game do
   context 'created' do
@@ -11,8 +13,8 @@ describe Game do
       @game = Game.new(name, multiplayer, last_played_at)
     end
 
-    it 'should have a name' do
-      expect(@game.name).to eq(name)
+    it 'should return a name' do
+      expect(@game.name).to eq('Call of Duty')
     end
     it 'should be multiplayed' do
       expect(@game.multiplayer).to eq(true)
