@@ -1,5 +1,5 @@
 # rubocop:disable Metrics/CyclomaticComplexity
-require_relative'../classes/item'
+require_relative '../classes/item'
 require './options/list_of_games_and_authors'
 require_relative '../classes/item'
 require_relative '../classes/label'
