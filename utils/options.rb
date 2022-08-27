@@ -44,6 +44,7 @@ class Options
     puts '13. Quit'
   end
 
+  # rubocop:disable  Metrics/MethodLength
   def menu_options
     case option
     when '1'
@@ -74,5 +75,6 @@ class Options
       puts 'Goodbye!'
     end
   end
+  # rubocop:enable  Metrics/MethodLength
 end
 # rubocop: enable  Metrics/CyclomaticComplexity
