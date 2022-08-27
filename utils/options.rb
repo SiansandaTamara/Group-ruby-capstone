@@ -18,10 +18,9 @@ class Options
   include GenreController
 
   def initialize
-    @items = []
     @labels = access_label
     @books = load_book
-    @music_albums = load_music_albums
+    @music_album = load_music_albums
     @games = load_games
     @authors = load_authors
     @genres = access_genre

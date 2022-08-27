@@ -1,4 +1,3 @@
-# require 'pry'
 require 'json'
 require_relative '../classes/music_album'
 
@@ -12,15 +11,15 @@ module MusicAlbumController
     puts 'Is it archived? (y/n)'
     archived = gets.chomp.to_s.downcase != 'y'
     music_album = MusicAlbum.new(publish_date, on_spotify, archived)
-    @items << music_album
+    @music_album << music_album
     puts 'Music Album successfully added'
   end
 
   def list_music_album
-    if @items.empty?
+    if @music_album.empty?
       puts 'No music_album present yet'
     else
-      @items.each do |music_album|
+      @music_album.each do |music_album|
         puts ": publish date: #{music_album.publish_date},
         on spotify : #{music_album.on_spotify}, archived: #{music_album.archived} "
       end
@@ -42,7 +41,7 @@ module MusicAlbumController
 
   def save_music_album
     data = []
-    @items.each do |music_album|
+    @music_album.each do |music_album|
       data.push({ archived: music_album.archived, on_spotify: music_album.on_spotify,
                   publish_date: music_album.publish_date })
     end
