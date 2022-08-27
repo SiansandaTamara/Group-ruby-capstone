@@ -25,8 +25,3 @@ class Game < Item
     super && (Date.today.year - last_played_at.year) > 2
   end
 end
-# rubocop:enable Style/OptionalBooleanParameter
-name = 'Call of Duty'
-multiplayer = true
-last_played_at = Date.today
-game = Game.new(name, multiplayer, last_played_at)

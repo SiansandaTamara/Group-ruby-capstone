@@ -1,7 +1,6 @@
 # rubocop:disable Metrics/CyclomaticComplexity
 require_relative '../classes/item'
 require './options/list_of_games_and_authors'
-require_relative '../classes/item'
 require_relative '../classes/label'
 require_relative '../classes/music_album'
 require_relative '../classes/genre'
@@ -45,7 +44,6 @@ class Options
   end
 
   def menu_options
-    (option)
     case option
     when '1'
       list_book
