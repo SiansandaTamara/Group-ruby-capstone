@@ -4,7 +4,6 @@ require_relative './item'
 class Game < Item
   attr_accessor :name, :multiplayer, :last_played_at, :published_date
 
-  # rubocop:disable Style/OptionalBooleanParameter
   def initialize(name, multiplayer, last_played_at)
     super(archived, published_date)
     @name = name
@@ -26,8 +25,4 @@ class Game < Item
     super && (Date.today.year - last_played_at.year) > 2
   end
 end
-# rubocop:enable Style/OptionalBooleanParameter
-name = 'Call of Duty'
-multiplayer = true
-last_played_at = Date.today
-game = Game.new(name, multiplayer, last_played_at)
+

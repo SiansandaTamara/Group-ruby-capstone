@@ -10,7 +10,7 @@ describe Game do
     last_played_at = Date.today
 
     before(:each) do
-      @game = Game.new(name, multiplayer, last_played_at )
+      @game = Game.new(name, multiplayer, last_played_at)
     end
 
     it 'should return a name' do

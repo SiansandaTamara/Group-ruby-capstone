@@ -1,7 +1,6 @@
-# rubocop:disable Metrics/CyclomaticComplexity
-require_relative'../classes/item'
-require './options/list_of_games_and_authors'
+# rubocop:disable  Metrics/MethodLength
 require_relative '../classes/item'
+require './options/list_of_games_and_authors'
 require_relative '../classes/label'
 require_relative '../classes/music_album'
 require_relative '../classes/genre'
@@ -75,4 +74,4 @@ class Options
     end
   end
 end
-# rubocop: enable Metrics/CyclomaticComplexity
+# rubocop: enable  Metrics/MethodLength
