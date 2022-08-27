@@ -4,7 +4,6 @@ require_relative './item'
 class Game < Item
   attr_accessor :name, :multiplayer, :last_played_at, :published_date
 
-  # rubocop:disable Style/OptionalBooleanParameter
   def initialize(name, multiplayer, last_played_at)
     super(archived, published_date)
     @name = name

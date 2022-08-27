@@ -44,7 +44,8 @@ class Options
     puts '13. Quit'
   end
 
-  def menu_options(option)
+  def menu_options
+    (option)
     case option
     when '1'
       list_book
