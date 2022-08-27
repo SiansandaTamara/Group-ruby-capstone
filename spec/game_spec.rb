@@ -8,9 +8,11 @@ describe Game do
     name = 'Call of Duty'
     multiplayer = true
     last_played_at = Date.today
+    publish_date = '2022-04-04'
+    archived = true
 
     before(:each) do
-      @game = Game.new(name, multiplayer, last_played_at)
+      @game = Game.new(name, multiplayer, last_played_at, publish_date, archived)
     end
 
     it 'should return a name' do
