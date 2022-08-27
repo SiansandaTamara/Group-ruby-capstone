@@ -1,4 +1,5 @@
 # rubocop:disable  Metrics/MethodLength
+
 require_relative '../classes/item'
 require './options/list_of_games_and_authors'
 require_relative '../classes/label'
@@ -43,7 +44,7 @@ class Options
     puts '13. Quit'
   end
 
-  def menu_options(option)
+  def menu_options
     case option
     when '1'
       list_book
