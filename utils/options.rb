@@ -1,4 +1,4 @@
-# rubocop:disable  Metrics/MethodLength
+# rubocop:disable  Metrics/CyclomaticComplexity
 
 require_relative '../classes/item'
 require './options/list_of_games_and_authors'
@@ -75,4 +75,4 @@ class Options
     end
   end
 end
-# rubocop: enable  Metrics/MethodLength
+# rubocop: enable  Metrics/CyclomaticComplexity

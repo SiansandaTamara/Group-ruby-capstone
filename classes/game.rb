@@ -25,4 +25,3 @@ class Game < Item
     super && (Date.today.year - last_played_at.year) > 2
   end
 end
-
