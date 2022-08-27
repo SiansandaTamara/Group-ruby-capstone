@@ -45,7 +45,7 @@ class Options
   end
 
   # rubocop:disable  Metrics/MethodLength
-  def menu_options
+  def menu_options(option)
     case option
     when '1'
       list_book
